@@ -28,3 +28,7 @@ Utilizaremos TDD e _baby steps_.
 - Angular
 
 Quer adicionar um tema aqui? [Abra uma issue com a sua proposta](https://github.com/campinas-front-end-meetup/Dojos/issues/new).
+
+## Dojos já realizados
+
+- [#1 | TDD em JavaScript - Princi Web - 14/04/2016](dojos/20160414-tdd-jasmine)
