@@ -13,6 +13,8 @@ Aplicação "**Listagem de apoiadores do _DevNaEstrada_**".
 `$ [sudo] npm install`  
 `$ gulp`
 
+Acesse http://localhost:8080/
+
 
 ## Estrutura de arquivos
 
