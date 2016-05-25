@@ -2,28 +2,17 @@
 
 Introdução ao framework AngularJS - 25/05/2016
 
+
 ## Proposta
 
-Aplicação **Listagem de apoiadores do _DevNaEstrada_**.
+Aplicação "**Listagem de apoiadores do _DevNaEstrada_**".
 
-Itens que serão exercitados:
-* ng-app
-* ng-controller _(controller as)_
-* ng-model
-* ng-bind / {{ expressions }}
-* ng-repeat
-* ng-if / ng-show / ng-hide
-* filtros
-* directivas
-* ng-model-options
 
 ## Setup
 
 `$ [sudo] npm install`  
-
-Para rodar:
-
 `$ gulp`
+
 
 ## Estrutura de arquivos
 
@@ -45,7 +34,22 @@ app/
 ## Exercício
 Reproduzir as funcionalidades conforme [este exemplo](http://codepen.io/lnfnunes/full/YqBYpQ/).
 
+
+**Itens que serão exercitados:**
+
+* ng-app
+* ng-controller _(controller as)_
+* ng-model
+* ng-bind / {{ expressions }}
+* ng-repeat
+* ng-if / ng-show / ng-hide
+* filtros
+* directivas
+* ng-model-options
+
+
 **Funcionalidades:**
+
 * Exibir na _view_ uma listagem dos "apoiadores" contido no controller _"js/apoiaseController.js"_.
 * _Filtrar_ apenas os usuários **ativos**.
 * _Ordenar_ os resultados em **ordem alfabética**.
