@@ -2,6 +2,7 @@
 
 Introdução ao framework AngularJS - 25/05/2016
 
+[https://slides.com/lnfnunes/dojo-angularjs/](https://slides.com/lnfnunes/dojo-angularjs/)
 
 ## Proposta
 
@@ -13,7 +14,7 @@ Aplicação "**Listagem de apoiadores do _DevNaEstrada_**".
 `$ [sudo] npm install`  
 `$ gulp`
 
-Acesse http://localhost:8080/
+Acesse [http://localhost:8080/](http://localhost:8080/)
 
 
 ## Estrutura de arquivos
