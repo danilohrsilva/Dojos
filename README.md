@@ -32,3 +32,4 @@ Quer adicionar um tema aqui? [Abra uma issue com a sua proposta](https://github.
 ## Dojos já realizados
 
 - [#1 | TDD em JavaScript - Princi Web - 14/04/2016](dojos/20160414-tdd-jasmine)
+- [#2 | Introdução ao Angular - Princi Web - 25/06/2016](dojos/20160525-angularjs)
