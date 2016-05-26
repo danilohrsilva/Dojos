@@ -54,7 +54,7 @@ Reproduzir as funcionalidades conforme [este exemplo](http://codepen.io/lnfnunes
 **Funcionalidades:**
 
 * Exibir na _view_ uma listagem dos "apoiadores" contido no controller _"js/apoiaseController.js"_.
-* _Exibir_ apenas os usuários **ativos**.
+* Adicionar no html da listagem, apenas os usuários **ativos**.
 * _Ordenar_ os resultados em **ordem alfabética**.
 * _Filtrar_ os itens da listagem, pelo nome, conforme o campo de busca é digitado.
 * Adicionar uma espera de 300ms antes de efetuar o filtro anterior conforme o usuário digita **(debounce)**.
