@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 
-const Apoiador = () => (
+const Apoiador = ({ name, picture }) => (
   <div className="apoiador">
-    <img src="https://goo.gl/RcqO3R" className="apoiador__picture" alt="Foto do apoiador Victor Miguez" />
-    <span className="apoiador__name">Victor Miguez</span>
+    <img src={picture} className="apoiador__picture" alt={'Foto do apoiador ' + name} />
+    <span className="apoiador__name">{name}</span>
   </div>
 )
 

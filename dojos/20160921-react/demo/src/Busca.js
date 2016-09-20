@@ -1,8 +1,11 @@
 import React, { PropTypes } from 'react';
 
-const Busca = () => (
+const Busca = ({ handleSearch }) => (
   <div className="search">
-    <input type="text" className="search__field" placeholder="Buscar" />
+    <input type="text"
+      className="search__field"
+      placeholder="Buscar"
+      onChange={handleSearch} />
   </div>
 )
 

@@ -1,0 +1,11 @@
+{
+  "apoiadores": [
+    {"id": 0, "picture": "https://graph.facebook.com/1301827323165832/picture?type=large", "name": "Douglas Matoso"},
+    {"id": 1, "picture": "https://pbs.twimg.com/profile_images/657406409341030400/4YB5kvoX.jpg", "name": "Felipe Azambuja"},
+    {"id": 2, "picture": "https://graph.facebook.com/961994403889342/picture?type=large", "name": "Gabriel Ribeiro"},
+    {"id": 3, "picture": "https://graph.facebook.com/10153879504729507/picture?type=large", "name": "Leandro Nunes"},
+    {"id": 4, "picture": "https://graph.facebook.com/974416929295015/picture?type=large", "name": "Luís Felipe Souza"},
+    {"id": 5, "picture": "https://pbs.twimg.com/profile_images/633018596239740929/y39acEhF.jpg", "name": "Ramon Sanches"},
+    {"id": 6, "picture": "https://goo.gl/RcqO3R", "name": "Victor Miguez"}
+  ]
+}
