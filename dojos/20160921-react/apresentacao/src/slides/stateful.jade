@@ -1,0 +1,32 @@
+section
+  h2 Stateful
+  pre
+    code
+      | import React, { Component } from 'react';
+      | 
+      | class App extends Component {
+      |   constructor () {
+      |     super();
+      | 
+      |     this.state = {
+      |       count: 0
+      |     };
+      | 
+      |     this.increase = this.increase.bind(this)
+      |   }
+      | 
+      |   increase () {
+      |     this.setState({count: ++this.state.count})
+      |   }
+      | 
+      |   render () {
+      |     return (
+      |       <div>
+      |         <span>{this.state.count}</span>
+      |         <button onClick={this.increase}>Bora!</button>
+      |       </div>
+      |     )
+      |   }
+      | }
+      | 
+      | export default App;

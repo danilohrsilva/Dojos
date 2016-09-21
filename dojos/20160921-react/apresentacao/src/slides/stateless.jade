@@ -1,0 +1,26 @@
+section
+  h2 Stateless
+  pre
+    code.js
+      | // Definição stateless
+      | import React from 'react';
+      | 
+      | const Counter = ({ value }) => (
+      |   <div className="counter">
+      |     <span>{value}</span>
+      |   </div>
+      | )
+      | 
+      | export default Counter;
+      | 
+      | ////////////////////////
+      | 
+      | // Chamada Stateful
+      | import Counter from './Counter.js';
+      | render () {
+      |   return (
+      |     <div>
+      |       &lt;Counter value={this.state.count} /&gt;
+      |     </div>
+      |   )
+      | }
