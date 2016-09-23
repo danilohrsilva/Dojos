@@ -1,8 +1,21 @@
 section
-	ul
-		li O que é
-		li JSX
-		li Event handlers
-		li Stateful x Stateless (dumb)
-		li Lifecycle
-			
+  h2 Event Handlers
+  p
+    small
+      a(href="https://facebook.github.io/react/docs/events.html" target="_blank")
+        | React Events
+  pre
+    code.js
+      | const MeuBtn = ({ onClick }) => (
+      |   <div className="btn-wrapper">
+      |     <button onClick={onClick}>Clica ae!</button>
+      |   </div>
+      | )
+      | 
+      | render () {
+      |   return (
+      |     <div>
+      |       &lt;MeuBtn onClick={this.increase} /&gt;
+      |     </div>
+      |   )
+      | }
