@@ -33,3 +33,4 @@ Quer adicionar um tema aqui? [Abra uma issue com a sua proposta](https://github.
 
 - [#1 | TDD em JavaScript - Princi Web - 14/04/2016](dojos/20160414-tdd-jasmine)
 - [#2 | Introdução ao Angular - Princi Web - 25/06/2016](dojos/20160525-angularjs)
+- [#3 | Introdução ao React - Cervejoteca - 23/09/2016](dojos/20160921-react)
