@@ -9,7 +9,7 @@ export default {
     return {
       apoiadores: {},
       searchQuery: ''
-    }
+    };
   },
   computed: {
     apoiadoresFiltered: function () {
@@ -32,4 +32,4 @@ export default {
   created () {
     this.getApoiadores();
   }
-}
+};
