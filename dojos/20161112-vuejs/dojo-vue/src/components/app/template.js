@@ -9,8 +9,7 @@ export default `
     <div class="search">
       <input type="text"
         class="search__field"
-        placeholder="Buscar"
-        v-model="searchQuery" />
+        placeholder="Buscar" />
     </div>
     <div class="apoiadores">
       <div class="apoiador">
