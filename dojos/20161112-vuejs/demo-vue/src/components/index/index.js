@@ -7,19 +7,15 @@ export default {
   template: template,
   data () {
     return {
-      apoiadores: {},
+      apoiadores: [],
       searchQuery: ''
     }
   },
   computed: {
     apoiadoresFiltered: function () {
-      if (this.apoiadores.length) {
-        return this.apoiadores.filter((apoiador) => {
-          return apoiador.name.toLowerCase().includes(this.searchQuery.toLowerCase());
-        });
-      }
-
-      return [];
+      return this.apoiadores.filter((apoiador) => {
+        return apoiador.name.toLowerCase().includes(this.searchQuery.toLowerCase());
+      });
     }
   },
   methods: {

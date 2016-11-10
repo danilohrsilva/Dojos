@@ -3,5 +3,7 @@ import App from './components/index/index';
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: function(createElement) {
+    return createElement(App);
+  }
 });
