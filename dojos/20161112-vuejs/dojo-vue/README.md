@@ -8,6 +8,9 @@
 # install dependencies
 npm install
 
+# serve rest API at localhost:8000
+npm run db
+
 # serve with hot reload at localhost:8080
 npm run dev
 
