@@ -30,11 +30,9 @@ export default {
   computed: {
     filtro: function() {
       var self = this;
-       return self.profiles.filter(function (profile) {
-         console.log(self.searchQuery);
-         return profile.name.toLowerCase().indexOf(self.searchQuery.toLowerCase()) !== -1
-     })
+      return self.profiles.filter(function (profile) {
+        return profile.name.toLowerCase().indexOf(self.searchQuery.toLowerCase()) !== -1;
+      });
     }
   }
-
 };

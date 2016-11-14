@@ -1,5 +1,3 @@
-import profile from '../profile/profile.js';
-
 export default `
   <div class="App">
     <header>
