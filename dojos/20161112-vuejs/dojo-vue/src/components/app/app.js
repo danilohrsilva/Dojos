@@ -1,4 +1,5 @@
 import template from './template';
+import '../profile/profile';
 import './app.css';
 
 export default {
