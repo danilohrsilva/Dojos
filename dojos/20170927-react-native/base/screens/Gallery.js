@@ -2,6 +2,10 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 class Gallery extends React.Component {
+  static navigationOptions = {
+    title: 'Hospedagens',
+  };
+
   render() {
     return (
       <View style={styles.container}>
