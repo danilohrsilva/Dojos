@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
 
 class Room extends React.Component {
   render() {
-    const { image, name, price, detail, rating } = this.props.data;
+    const { id, image, name, price, detail, rating } = this.props.data;
     const { navigate } = this.props;
     return (
       <View>
@@ -56,7 +56,7 @@ class Room extends React.Component {
 
 class Gallery extends React.Component {
   static navigationOptions = {
-    title: 'Welcome',
+    title: 'Hospedagens',
   };
   render() {
     const { navigate } = this.props.navigation;
@@ -71,13 +71,13 @@ class Gallery extends React.Component {
 
 class Detail extends React.Component {
   static navigationOptions = {
-    title: 'Chat with Lucy',
+    title: 'Detalhes',
   };
   render() {
     const { params } = this.props.navigation.state;
     return (
       <View>
-        <Text>Chat with {params.id}</Text>
+        <Text>Hospedagem id: {params.id}</Text>
       </View>
     );
   }
