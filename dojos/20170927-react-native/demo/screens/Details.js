@@ -7,6 +7,8 @@ import {
   View,
 } from 'react-native';
 
+import PlaceDetails from '../components/PlaceDetails.js';
+
 class Details extends React.Component {
   static navigationOptions = {
     title: 'Detalhes',
@@ -34,21 +36,9 @@ class Details extends React.Component {
 
   render() {
     return (
-      <View>
-        <Image
-          source={{ uri: this.state.place.image }}
-          style={styles.image} />
-        <Text>{this.state.place.name}</Text>
-      </View>
+      <PlaceDetails data={this.state.place}/>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  image: {
-    height: 100,
-    width: 320,
-  },
-});
 
 export default Details;

@@ -20,7 +20,6 @@ export default function PlaceDetails(props) {
 
   return (
     <View>
-      <Text>ID: {id}</Text>
       <Image
         source={{ uri: image }}
         style={styles.image} />
