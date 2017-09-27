@@ -1,13 +1,10 @@
 import React from 'react';
 import {
-  Button,
-  Image,
-  StyleSheet,
-  Text,
   View,
 } from 'react-native';
 
-import PlaceDetails from '../components/PlaceDetails.js';
+import PlaceDetails from '../components/PlaceDetails';
+import BookingForm from '../components/BookingForm';
 
 class Details extends React.Component {
   static navigationOptions = {
@@ -15,7 +12,8 @@ class Details extends React.Component {
   };
 
   state = {
-    place: {}
+    place: {},
+    bookingForm: {},
   }
 
   componentDidMount() {
@@ -34,9 +32,29 @@ class Details extends React.Component {
     })
   }
 
+  sendBookingRequest = () => {
+    fetch('http://localhost:7070/bookings', {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      method: "POST",
+      body: JSON.stringify(this.state.bookingForm)
+    });
+  }
+
   render() {
     return (
-      <PlaceDetails data={this.state.place}/>
+      <View>
+        <PlaceDetails data={this.state.place}/>
+        <BookingForm
+          handleCheckInChange={text => this.setState({ bookingForm: { ...this.state.bookingForm, checkIn: text } })}
+          handleCheckoutChange={text => this.setState({ bookingForm: { ...this.state.bookingForm, checkOut: text } })}
+          handleEmailChange={text => this.setState({ bookingForm: { ...this.state.bookingForm, email: text } })}
+          handleSubmit={this.sendBookingRequest}
+          values={this.state.bookingForm}
+        />
+      </View>
     );
   }
 }
