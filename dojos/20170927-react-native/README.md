@@ -9,6 +9,11 @@ Esse setup seguiu o guia [Getting Started](http://facebook.github.io/react-nativ
 yarn run ios
 ```
 
+## Iniciando a API
+```
+yarn run server
+```
+
 ## Desafio
 1. Criar componente `Card.js` para listar lugares;
 2. Obter todos os lugares pelo endereço `/places` e listá-los. Cada `Card` deve ter um link para a tela `Details/:id`;
