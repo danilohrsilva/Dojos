@@ -8,6 +8,9 @@ import {
   View,
 } from 'react-native';
 
+import PlaceDetails from './components/PlaceDetails';
+import Card from './components/Card';
+
 const rooms = [{
   id: 1,
   name: 'Zen Forest House',
@@ -31,29 +34,6 @@ const styles = StyleSheet.create({
   }
 })
 
-class Room extends React.Component {
-  render() {
-    const { id, image, name, price, detail, rating } = this.props.data;
-    const { data, navigate } = this.props;
-    return (
-      <View>
-        <Image
-          source={{ uri: image }}
-          style={styles.image} />
-        <Text>{name}</Text>
-        <Text>{price}</Text>
-        <Text>{detail}</Text>
-        <Text>{rating}</Text>
-
-        <Button
-          onPress={() => navigate('Details', { data })}
-          title="Ver detalhes"
-        />
-      </View>
-    )
-  }
-}
-
 class Gallery extends React.Component {
   static navigationOptions = {
     title: 'Hospedagens',
@@ -62,28 +42,10 @@ class Gallery extends React.Component {
     const { navigate } = this.props.navigation;
     return (
       <View>
-        <Room data={rooms[0]} navigate={navigate}></Room>
-        <Room data={rooms[1]} navigate={navigate}></Room>
+        <Card data={rooms[0]} navigate={navigate}></Card>
+        <Card data={rooms[1]} navigate={navigate}></Card>
       </View>
     );
-  }
-}
-
-class RoomDetail extends React.Component {
-  render() {
-    const { id, image, name, price, detail, rating } = this.props.data;
-    return (
-      <View>
-        <Text>ID: {id}</Text>
-        <Image
-          source={{ uri: image }}
-          style={styles.image} />
-        <Text>{name}</Text>
-        <Text>{price}</Text>
-        <Text>{detail}</Text>
-        <Text>{rating}</Text>
-      </View>
-    )
   }
 }
 
@@ -95,7 +57,7 @@ class Details extends React.Component {
     const { data } = this.props.navigation.state.params;
     return (
       <View>
-        <RoomDetail data={data}></RoomDetail>
+        <PlaceDetails data={data}></PlaceDetails>
       </View>
     );
   }
