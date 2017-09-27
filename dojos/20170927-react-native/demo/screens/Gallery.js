@@ -33,7 +33,7 @@ class Gallery extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View>
+      <View style=>
         {this.state.places.map((place) => (
           <Place key={place.id} data={place} navigate={navigate}></Place>
         ))}
@@ -41,5 +41,11 @@ class Gallery extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  page: {
+    padding: 10,
+  },
+});
 
 export default Gallery;
