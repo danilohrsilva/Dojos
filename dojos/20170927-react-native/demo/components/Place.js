@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
   image: {
     height: 100,
     width: 320,
-  }
-})
+  },
+});
 
 class Place extends React.Component {
   render() {
