@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 class Room extends React.Component {
   render() {
     const { id, image, name, price, detail, rating } = this.props.data;
-    const { navigate } = this.props;
+    const { data, navigate } = this.props;
     return (
       <View>
         <Image
@@ -46,7 +46,7 @@ class Room extends React.Component {
         <Text>{rating}</Text>
 
         <Button
-          onPress={() => navigate('Chat', { id })}
+          onPress={() => navigate('Details', { data })}
           title="Ver detalhes"
         />
       </View>
@@ -69,21 +69,39 @@ class Gallery extends React.Component {
   }
 }
 
-class Detail extends React.Component {
+class RoomDetail extends React.Component {
+  render() {
+    const { id, image, name, price, detail, rating } = this.props.data;
+    return (
+      <View>
+        <Text>ID: {id}</Text>
+        <Image
+          source={{ uri: image }}
+          style={styles.image} />
+        <Text>{name}</Text>
+        <Text>{price}</Text>
+        <Text>{detail}</Text>
+        <Text>{rating}</Text>
+      </View>
+    )
+  }
+}
+
+class Details extends React.Component {
   static navigationOptions = {
     title: 'Detalhes',
   };
   render() {
-    const { params } = this.props.navigation.state;
+    const { data } = this.props.navigation.state.params;
     return (
       <View>
-        <Text>Hospedagem id: {params.id}</Text>
+        <RoomDetail data={data}></RoomDetail>
       </View>
     );
   }
 }
 
 export default SimpleApp = StackNavigator({
-  Home: { screen: Gallery },
-  Chat: { screen: Detail },
+  Gallery: { screen: Gallery },
+  Details: { screen: Details },
 });
