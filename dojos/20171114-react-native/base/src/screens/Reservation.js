@@ -1,7 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 import Card from '../components/Card';
-import PlacesServices from '../components/PlacesServices';
 import FormReservation from '../components/FormReservation';
 
 class Gallery extends React.Component {
@@ -9,30 +8,17 @@ class Gallery extends React.Component {
     title: 'Hospedagens',
   };
 
-  state = {
-    places: PlacesServices()
-  }
-
   render() {
+    const {place} = this.props.navigation.state.params;
     return (
-      <View style={styles.container}>
-        {
-          this.state.places.map(place =>
-            <Card
-              key={place.id}
-              info={place}
-              goToReservation={() => (this.props.navigation.navigate('Reservation', {place}))}
-              />
-            )
-        }
-      </View>
+      <FormReservation place={place}/>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex:1,
+    flex: 1,
     backgroundColor: '#fff',
     justifyContent: 'flex-start',
     paddingHorizontal: 15
