@@ -8,11 +8,13 @@ const ingredients = [
     id: '1',
     name: "Pão italiano",
     price: 10,
+    unique: true,
   },
   {
     id: '2',
     name: "Pão de brioche",
     price: 10,
+    unique: true,
   },
   {
     id: '3',
@@ -112,6 +114,7 @@ class App extends Component {
 
         {ingredients.map(ingredient => (
           <Ingredient
+            cart={this.state.cart}
             ingredient={ingredient}
             addItem={this.addIngredientToCart}
             key={ingredient.id}
@@ -125,7 +128,7 @@ class App extends Component {
           removeItem={this.removeIngredientFromCart}
         />
 
-        <span>Total: {this.state.cart.total}</span>
+        <span>Total: R${this.state.cart.total}</span>
       </Fragment>
     );
   }
