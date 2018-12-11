@@ -1,0 +1,29 @@
+{
+  "ingredients": [
+    {
+      "id": "1",
+      "name": "Pão italiano",
+      "price": 10
+    },
+    {
+      "id": "2",
+      "name": "Pão de brioche",
+      "price": 10
+    },
+    {
+      "id": "3",
+      "name": "Hamburguer de costela",
+      "price": 10
+    },
+    {
+      "id": "4",
+      "name": "Hamburguer de soja",
+      "price": 10
+    },
+    {
+      "id": "5",
+      "name": "Alface",
+      "price": 10
+    }
+  ]
+}
