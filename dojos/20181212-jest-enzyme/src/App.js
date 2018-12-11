@@ -124,6 +124,8 @@ class App extends Component {
           cart={this.state.cart}
           removeItem={this.removeIngredientFromCart}
         />
+
+        <span>Total: {this.state.cart.total}</span>
       </Fragment>
     );
   }
