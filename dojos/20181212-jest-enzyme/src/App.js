@@ -111,8 +111,6 @@ class App extends Component {
           cart={this.state.cart}
           removeItem={this.removeIngredientFromCart}
         />
-
-        <span>Total: <strong>R${this.state.cart.total}</strong></span>
       </Fragment>
     );
   }
