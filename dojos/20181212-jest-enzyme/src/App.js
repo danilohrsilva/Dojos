@@ -3,6 +3,8 @@ import React, { Component, Fragment } from 'react';
 import CartSummaryModal from './Components/CartSummaryModal/CartSummaryModal';
 import Ingredient from './Components/Ingredient/Ingredient';
 
+import './App.css';
+
 const ingredients = [
   {
     id: '1',
@@ -108,8 +110,9 @@ class App extends Component {
           type="button"
           onClick={this.openOrderSummary}
           disabled={isCartEmpty}
+          className="summary-button"
         >
-          Order summary
+          Resumo do pedido
         </button>
 
         {ingredients.map(ingredient => (
@@ -128,7 +131,7 @@ class App extends Component {
           removeItem={this.removeIngredientFromCart}
         />
 
-        <span>Total: R${this.state.cart.total}</span>
+        <span>Total: <strong>R${this.state.cart.total}</strong></span>
       </Fragment>
     );
   }
