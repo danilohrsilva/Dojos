@@ -1,0 +1,19 @@
+body {
+  padding: 20px;
+}
+
+button:disabled {
+  cursor: unset;
+}
+
+.summary-button {
+  width: 100%;
+  display: block;
+  width: 300px;
+  padding: 10px;
+  background: none;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

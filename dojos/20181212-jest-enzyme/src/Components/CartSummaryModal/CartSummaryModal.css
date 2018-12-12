@@ -1,0 +1,10 @@
+.cart-summary__list {
+  padding: 0;
+  list-style: none;
+}
+
+.cart-summary__list-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
