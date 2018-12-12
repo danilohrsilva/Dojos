@@ -1,20 +1,10 @@
 import React from 'react';
 import Modal from 'react-modal';
+import StyleHoc from './StyleHoc';
 
 import './CartSummaryModal.css';
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)'
-  }
-};
-
-const CartSummaryModal = ({ isOpen, onClose, cart, removeItem }) => {
+const CartSummaryModal = ({ isOpen, onClose, cart, removeItem, customStyles }) => {
   return (
     <Modal
       isOpen={isOpen}
@@ -22,7 +12,7 @@ const CartSummaryModal = ({ isOpen, onClose, cart, removeItem }) => {
       style={customStyles}
     >
 
-      <p>Your special burger ingredients:</p>
+      <p>Ingredientes do seu hamburger:</p>
 
       <ul className="cart-summary__list">
         {cart.items.map(item => (
@@ -40,4 +30,4 @@ const CartSummaryModal = ({ isOpen, onClose, cart, removeItem }) => {
   );
 };
 
-export default CartSummaryModal;
+export default StyleHoc(CartSummaryModal);
