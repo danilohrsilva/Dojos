@@ -12,7 +12,8 @@ A aplicação está toda funcionando mas faltando os testes.
 Inicie a aplicação com `npm start`, e em outro terminal, o server `npx json-server db.json --watch --port 3001`.
 
 ## Passo 3
-Rode os testes com `npm test`
+- Rode os testes com `npm test -- --watch --coverage`
+- Abra o arquivo `/Dojos/dojos/20181212-jest-enzyme/coverage/lcov-report/index.html` para visualizar o report de testes.
 
 ## Passo 4
 Vamos começar testando o `App.js`. O objetivo aqui é cobrir todas as funções, mudanças de estado e a renderização deste componente.
