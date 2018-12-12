@@ -3,27 +3,29 @@
     {
       "id": "1",
       "name": "Pão italiano",
-      "price": 10
+      "price": 12.90,
+      "unique": true
     },
     {
       "id": "2",
       "name": "Pão de brioche",
-      "price": 10
+      "price": 15.32,
+      "unique": true
     },
     {
       "id": "3",
       "name": "Hamburguer de costela",
-      "price": 10
+      "price": 25
     },
     {
       "id": "4",
       "name": "Hamburguer de soja",
-      "price": 10
+      "price": 18.73
     },
     {
       "id": "5",
       "name": "Alface",
-      "price": 10
+      "price": 2.50
     }
   ]
 }
