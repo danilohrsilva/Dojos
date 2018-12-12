@@ -2,38 +2,9 @@ import React, { Component, Fragment } from 'react';
 
 import CartSummaryModal from './Components/CartSummaryModal/CartSummaryModal';
 import Ingredient from './Components/Ingredient/Ingredient';
+import { getIngredients } from './services/ingredientsServices';
 
 import './App.css';
-
-const ingredients = [
-  {
-    id: '1',
-    name: "Pão italiano",
-    price: 10,
-    unique: true,
-  },
-  {
-    id: '2',
-    name: "Pão de brioche",
-    price: 10,
-    unique: true,
-  },
-  {
-    id: '3',
-    name: "Hamburguer de costela",
-    price: 10,
-  },
-  {
-    id: '4',
-    name: "Hamburguer de soja",
-    price: 10,
-  },
-  {
-    id: '5',
-    name: "Alface",
-    price: 10,
-  },
-]
 
 class App extends Component {
   constructor() {
@@ -45,6 +16,7 @@ class App extends Component {
         total: 0,
       },
       isOrderSummaryOpen: false,
+      ingredients: [],
     }
   }
 
@@ -58,6 +30,15 @@ class App extends Component {
     }
 
     return null;
+  }
+
+  componentDidMount() {
+    getIngredients()
+      .then(ingredients => {
+        this.setState({
+          ingredients,
+        });
+      })
   }
 
   addIngredientToCart = (ingredient) => {
@@ -115,7 +96,7 @@ class App extends Component {
           Resumo do pedido
         </button>
 
-        {ingredients.map(ingredient => (
+        {this.state.ingredients.map(ingredient => (
           <Ingredient
             cart={this.state.cart}
             ingredient={ingredient}
