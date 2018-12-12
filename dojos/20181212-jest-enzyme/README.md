@@ -19,6 +19,7 @@ Vamos começar testando o `App.js`. O objetivo aqui é cobrir todas as funções
 - Fazer um teste de snapshot.
 - Testar chamada de fetch no componentDidMount.
 - Implementar e testar como o componente se comporta se a chamada fetch retornar um erro.
+- Exiba o total dos items adicionados. Atualize seu snapshot.
 
 **Plus**
 A função `removeIngredientFromCart` está com um bug. Se tivermos mais de um ingrediente do mesmo tipo, não é possível remover apenas um.
