@@ -35,6 +35,7 @@ class App extends Component {
   componentDidMount() {
     getIngredients()
       .then(ingredients => {
+        console.log(ingredients);
         this.setState({
           ingredients,
         });
@@ -104,6 +105,8 @@ class App extends Component {
             key={ingredient.id}
           />
         ))}
+
+        <p>Total de itens: {this.state.ingredients.length}</p>
 
         <CartSummaryModal
           isOpen={this.state.isOrderSummaryOpen}

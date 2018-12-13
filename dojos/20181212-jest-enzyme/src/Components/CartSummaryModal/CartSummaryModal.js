@@ -4,7 +4,7 @@ import StyleHoc from './StyleHoc';
 
 import './CartSummaryModal.css';
 
-const CartSummaryModal = ({ isOpen, onClose, cart, removeItem, customStyles }) => {
+export const CartSummaryModal = ({ isOpen, onClose, cart, removeItem, customStyles }) => {
   return (
     <Modal
       isOpen={isOpen}

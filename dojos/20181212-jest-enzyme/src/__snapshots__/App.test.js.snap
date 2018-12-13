@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Teste snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <button
+          className="summary-button"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
+        >
+          Resumo do pedido
+        </button>,
+        Array [],
+        <p>
+          Total de itens: 
+          0
+        </p>,
+        <Component
+          cart={
+            Object {
+              "items": Array [],
+              "total": 0,
+            }
+          }
+          isOpen={false}
+          onClose={[Function]}
+          removeItem={[Function]}
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Resumo do pedido",
+          "className": "summary-button",
+          "disabled": true,
+          "onClick": [Function],
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "Resumo do pedido",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Total de itens: ",
+            0,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Total de itens: ",
+          0,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "cart": Object {
+            "items": Array [],
+            "total": 0,
+          },
+          "isOpen": false,
+          "onClose": [Function],
+          "removeItem": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <button
+            className="summary-button"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            Resumo do pedido
+          </button>,
+          Array [],
+          <p>
+            Total de itens: 
+            0
+          </p>,
+          <Component
+            cart={
+              Object {
+                "items": Array [],
+                "total": 0,
+              }
+            }
+            isOpen={false}
+            onClose={[Function]}
+            removeItem={[Function]}
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Resumo do pedido",
+            "className": "summary-button",
+            "disabled": true,
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "Resumo do pedido",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Total de itens: ",
+              0,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Total de itens: ",
+            0,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "cart": Object {
+              "items": Array [],
+              "total": 0,
+            },
+            "isOpen": false,
+            "onClose": [Function],
+            "removeItem": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
